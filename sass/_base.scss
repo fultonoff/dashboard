@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; //10/16 = 
+}
+
+:root{
+    --color-main: #22222C;
+    --color-purple: #4F63FF;
+    --color-yellow: #F79F1A;
+    --color-dark: #2E2E3C;
+    --color-grey: #F5F6FA;
+    --color-grey-dark: #707070;
+    --color-green: #2DCA72;
+}
