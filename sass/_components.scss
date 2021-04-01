@@ -106,3 +106,45 @@
     top: 0;
     
 }
+
+.account__summary{
+    font-family: inherit;
+    font-size: 2rem;
+    color: #fff;
+    opacity: .5;
+    font-weight: 400;
+    margin: 4rem 2rem;
+}
+
+.account_content{
+    display: flex;
+
+    .statement{
+        flex: 1;
+        background-color: var(--color-dark);
+        border-radius: 1.5rem;
+        padding: 4rem 2rem;
+        margin-left: 2rem;
+    }
+
+    .reward{
+        flex-basis: 30%;
+        background-color: var(--color-dark);
+        border-radius: 1.5rem;
+        padding:  2rem;
+        margin-right: 2rem;
+        margin-left: 4rem;
+
+        &__text{
+            h1{
+                color: #fff;
+                opacity: .5;
+            }
+        }
+
+        &__point{
+            display: flex;
+            padding: 1rem 0;
+        }
+    }
+}
