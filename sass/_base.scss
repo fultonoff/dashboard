@@ -22,3 +22,10 @@ html{
     --color-grey-dark: #707070;
     --color-green: #2DCA72;
 }
+
+
+
+::selection{
+    background-color: var(--color-purple);
+    color: #F5F6FA;
+}

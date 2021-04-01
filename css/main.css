@@ -25,6 +25,16 @@ html {
   --color-green: #2DCA72;
 }
 
+::-moz-selection {
+  background-color: var(--color-purple);
+  color: #F5F6FA;
+}
+
+::selection {
+  background-color: var(--color-purple);
+  color: #F5F6FA;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +120,8 @@ html {
   border-radius: .3rem;
   background-color: transparent;
   margin-right: -5rem;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .card__details-box select {
@@ -138,7 +150,6 @@ body {
   max-width: 1366px;
   margin: 0 auto;
   background-color: var(--color-main);
-  height: 933px;
   -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
           box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
@@ -282,6 +293,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 10rem;
+  margin-left: 2rem;
 }
 
 .navigation__content {
@@ -291,6 +304,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.navigation__arrow {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .navigation__item {
@@ -305,6 +323,8 @@ body {
           justify-content: space-between;
   padding: 1.5rem 4rem;
   margin-left: 1rem;
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .navigation__text:hover {
@@ -340,7 +360,9 @@ body {
 }
 
 .navigation__item:hover {
-  background-color: var(--color-dark);
+  background-color: var(--color-purple);
   border-radius: 50px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 /*# sourceMappingURL=main.css.map */
