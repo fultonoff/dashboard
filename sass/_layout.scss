@@ -43,6 +43,15 @@ body{
         position: relative;
         margin-right: 2rem;
         margin-top: 1rem;
+        cursor: pointer;
+        align-items: stretch;
+        transition: all .2s cubic-bezier(1, 0, 0, 1);
+
+        &:hover{
+
+            transform: translateY(-5px);
+        }
+      
 
         &-box{
             background-color: red;
@@ -69,6 +78,17 @@ body{
         border: none;
         border-radius: 50px;
         margin-left: 2rem;
+        color: #fff;
+        font-family: inherit;
+        background-color: var(--color-purple);
+        outline: none;
+        cursor: pointer;
+        transition: all .2s cubic-bezier(1, 0, 0, 1);
+
+        &:hover{
+
+            transform: translateY(-5px);
+        }
     
     }
 }

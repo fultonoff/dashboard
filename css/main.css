@@ -518,6 +518,17 @@ body {
   position: relative;
   margin-right: 2rem;
   margin-top: 1rem;
+  cursor: pointer;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+  transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+}
+
+.header__notification:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .header__notification-box {
@@ -545,6 +556,18 @@ body {
   border: none;
   border-radius: 50px;
   margin-left: 2rem;
+  color: #fff;
+  font-family: inherit;
+  background-color: var(--color-purple);
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+  transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+}
+
+.header__btn:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .main {
