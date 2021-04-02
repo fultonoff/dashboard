@@ -44,10 +44,6 @@ body{
         margin-right: 2rem;
         margin-top: 1rem;
 
-        &:hover{
-            background-color: teal;
-        }
-
         &-box{
             background-color: red;
             height: 2rem;
@@ -65,11 +61,7 @@ body{
 
         
     }
-    &__bell{
-        
-
-        
-    }
+    
 
 
     &__btn{
@@ -82,9 +74,10 @@ body{
 }
 
 .main{
+    position: relative;
     display: flex;
     justify-content: center;
-    align-self: stretch;
+  
   
     
     
@@ -94,9 +87,9 @@ body{
         flex-direction: column;
         justify-content: center;
         border-right: 1px solid hsla(228, 22%, 5%, 0.35);
-        flex: 0 0 30%;
+        flex: 0 0 10%;
         padding-top: 5rem;
-        height: 100%;
+       
        
 
         
@@ -113,10 +106,9 @@ body{
 }
 
 .navigation{
-
     display: flex;
     align-items:center;
-    margin-top: 8rem;
+    margin-top: 5rem;
     
 
     &__text{
@@ -198,6 +190,17 @@ body{
     }
 }
 
-.main__content{
+.footer{
+    color: #fff;
+   font-size: 1rem;
+   margin: 0 auto;
 
+   a{
+       color: chocolate;
+       text-decoration: none;
+       
+       font-weight: 100;
+   }
+ 
+    
 }
