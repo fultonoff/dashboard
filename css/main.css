@@ -286,19 +286,37 @@ html {
   margin-top: -.3rem;
 }
 
-.statement__block1 {
+.statement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.statement__block1-current {
-  padding: 2rem 4rem 4rem;
-  background-color: var(--color-dark);
+.statement__block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50%;
+}
+
+.statement__block1 > * {
+  height: 90%;
+  width: 90%;
   border-radius: 1.5rem;
+}
+
+.statement__block1-current {
+  background-color: var(--color-dark);
+  margin-right: 1rem;
 }
 
 .statement__block1-current h1 {
@@ -306,19 +324,19 @@ html {
   color: #E4E4E4;
   opacity: .5;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin: 2rem;
 }
 
 .statement__block1-current p {
   color: #E4E4E4;
   opacity: .5;
-  margin: 1rem 0;
+  margin: 1rem 2rem;
 }
 
 .statement__block1-last {
-  padding: 2rem 4rem 4rem;
   background-color: var(--color-dark);
-  border-radius: 1.5rem;
+  margin-left: 1rem;
+  padding: 1rem;
 }
 
 .statement__block1-last .total {
@@ -335,7 +353,7 @@ html {
 
 .statement__block1-last .line {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 1rem;
   background-color: rgba(227, 227, 227, 0.508);
   border-radius: 50px;
@@ -375,19 +393,26 @@ html {
 }
 
 .statement__block2 {
-  margin-top: 4.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+}
+
+.statement__block2 > * {
+  height: 100%;
+  width: 90%;
+  border-radius: 1.5rem;
 }
 
 .statement__block2-current {
-  padding: 2rem 4rem 4rem;
   background-color: var(--color-dark);
-  border-radius: 1.5rem;
+  margin-right: 1rem;
 }
 
 .statement__block2-current h1 {
@@ -395,19 +420,19 @@ html {
   color: #E4E4E4;
   opacity: .5;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin: 2rem;
 }
 
 .statement__block2-current p {
   color: #E4E4E4;
   opacity: .5;
-  margin: 1rem 0;
+  margin: 1rem 2rem;
 }
 
 .statement__block2-last {
-  padding: 2rem 4rem 4rem;
   background-color: var(--color-dark);
-  border-radius: 1.5rem;
+  margin-left: 1rem;
+  padding: 1rem;
 }
 
 .statement__block2-last .total {
@@ -424,7 +449,7 @@ html {
 
 .statement__block2-last .line {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 1rem;
   background-color: rgba(227, 227, 227, 0.508);
   border-radius: 50px;
