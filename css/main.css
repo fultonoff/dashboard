@@ -238,6 +238,13 @@ html {
       align-self: flex-start;
 }
 
+@media only screen and (max-width: 700px) {
+  .account_content .reward {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 .account_content .reward::before {
   content: url(/img/icon.png);
   position: absolute;
@@ -356,6 +363,14 @@ html {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 700px) {
+  .statement {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0;
+  }
+}
+
 .statement__block1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,6 +378,12 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .statement__block1 {
+    margin: 2rem 0;
+  }
 }
 
 .statement__block1 > * {
@@ -374,6 +395,13 @@ html {
 .statement__block1-current {
   background-color: var(--color-dark);
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .statement__block1-current {
+    margin-right: 0;
+    height: 20rem;
+  }
 }
 
 .statement__block1-current h1 {
@@ -394,6 +422,13 @@ html {
   background-color: var(--color-dark);
   margin-left: 1rem;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .statement__block1-last {
+    margin-right: 0;
+    height: 20rem;
+  }
 }
 
 .statement__block1-last .total {
@@ -459,6 +494,17 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 50%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .statement__block2 {
+    margin: 2rem 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .statement__block2 > * {
@@ -470,6 +516,13 @@ html {
 .statement__block2-current {
   background-color: var(--color-dark);
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .statement__block2-current {
+    margin-right: 0;
+    height: 20rem;
+  }
 }
 
 .statement__block2-current h1 {
@@ -490,6 +543,13 @@ html {
   background-color: var(--color-dark);
   margin-left: 1rem;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .statement__block2-last {
+    margin-right: 0;
+    height: 20rem;
+  }
 }
 
 .statement__block2-last .total {
