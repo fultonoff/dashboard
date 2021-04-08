@@ -98,9 +98,10 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 2rem 0;
   }
 }
 
@@ -223,6 +224,12 @@ html {
   margin-left: 2rem;
 }
 
+@media only screen and (max-width: 700px) {
+  .account_content .statement {
+    margin-left: 0;
+  }
+}
+
 .account_content .reward {
   overflow: hidden;
   position: relative;
@@ -250,6 +257,12 @@ html {
   position: absolute;
   top: 24rem;
   left: 26rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .account_content .reward::before {
+    left: 90rem;
+  }
 }
 
 .account_content .reward hr {
@@ -683,6 +696,12 @@ body {
   margin-top: 4rem;
   -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    margin-top: 0;
+  }
 }
 
 .header {

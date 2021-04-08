@@ -26,7 +26,7 @@
 
 
 .card{
-   margin: 2rem;
+   margin: 2rem ;
    border-radius: 1rem;
     background-color: var(--color-dark);
     display: flex;
@@ -38,7 +38,9 @@
     @media only screen and(max-width: 700px) {
 
         flex-direction: column;
-        justify-content: flex-start;
+        
+        align-items: flex-start;
+        margin: 2rem 0;
        
    }
     
@@ -159,6 +161,13 @@
 
         border-radius: 1.5rem;
         margin-left: 2rem;
+
+        @media only screen and(max-width: 700px) {
+
+           margin-left: 0;
+    
+           
+       }
     }
 
     .reward{
@@ -187,6 +196,13 @@
             position: absolute;
             top: 24rem;
             left: 26rem;
+
+            @media only screen and(max-width: 700px) {
+
+                left: 90rem;
+        
+               
+           }
         }
 
         hr{
@@ -445,6 +461,7 @@
             
             margin: 2rem 0;
             justify-content: center;
+            
             
     
            
