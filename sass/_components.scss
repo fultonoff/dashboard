@@ -103,11 +103,23 @@
 
 .card::before{
     content: url(/img/iluustr.png);
-    height: 6rem;
-    width: 9rem;
+    
     position: absolute;
-    right: 9rem;
+    right: -1rem;
     top: 0;
+
+    @media only screen and(max-width: 1100px) {
+
+       width: 2rem;
+       right: 15rem;
+       opacity: .1;
+    }
+
+    @media only screen and(max-width: 900px) {
+
+        right: 25rem;
+        
+    }
     
 }
 
@@ -122,6 +134,13 @@
 
 .account_content{
     display: flex;
+
+    @media only screen and(max-width: 700px) {
+
+        // flex-direction: column;
+
+       
+   }
 
     .statement{
         flex: 1;
@@ -140,6 +159,8 @@
         margin-right: 2rem;
         margin-left: 4rem;
         align-self: flex-start;
+
+
 
         &::before{
             content: url(/img/icon.png);
@@ -464,5 +485,97 @@
         }
     }
 
+}
+
+/////////////////////////////////////////////////////
+///DARK MODE
+
+.container{
+    background-color: #E4E4E4;
+
+    .dark-mode{
+        position: relative;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        background-color: #000000;
+        margin-left: 2rem;
+        cursor: pointer;
+        
+
+        &:before{
+            position: absolute;
+            top: 0;
+            left: 1px;
+            border-radius: 100%;
+            content: "";
+            padding: 1rem;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 25px  rgba(0,0,0,0.6);
+            transition: .4s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            
+        
+        }
+    }
+
+    .dark-mode.active{
+        position: relative;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        background-color: #ffffff;
+        margin-left: 2rem;
+       
+        &:before{
+            position: absolute;
+            top: 0;
+            left: 20px;
+            border-radius: 50%;
+            content: "";
+            padding: 1rem;
+            background-color: rgb(2, 2, 2);
+            box-shadow: 0px 0px 25px  rgba(0,0,0,0.6);
+            
+        
+        }
+
+        
+    }
+
+    
+}
+
+.container.active{
+    background:#b5b4b48e;
+    color: #000000;
+    
+    
+    .main{
+
+        .navigation{
+
+            ul{
+
+            li{
+
+                span{
+                    color: #000;
+                    
+                        
+                    }
+                }
+            }
+        }
+        }
+
+    }
+
+    
+
+
+.header__logo.active{
+    display: none;
+}
+
+.header__logo-2.active{
+    display: block;
 }
 

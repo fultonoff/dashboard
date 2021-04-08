@@ -15,6 +15,24 @@ body{
 
 html{
     font-size: 62.5%; //10/16 = 
+
+    @media only screen and(max-width: 1100px) {
+
+        font-size: 56.25%; //
+        
+    }
+
+    @media only screen and(max-width: 900px) {
+
+        font-size: 37.5%; //
+        
+    }
+
+    @media only screen and(max-width: 700px) {
+
+         font-size: 29.5%;
+        
+    }
 }
 
 :root{
@@ -33,3 +51,4 @@ html{
     background-color: var(--color-purple);
     color: #F5F6FA;
 }
+

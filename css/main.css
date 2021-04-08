@@ -15,6 +15,24 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 29.5%;
+  }
+}
+
 :root {
   --color-main: #22222C;
   --color-purple: #4F63FF;
@@ -136,11 +154,23 @@ html {
 
 .card::before {
   content: url(/img/iluustr.png);
-  height: 6rem;
-  width: 9rem;
   position: absolute;
-  right: 9rem;
+  right: -1rem;
   top: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+  .card::before {
+    width: 2rem;
+    right: 15rem;
+    opacity: .1;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card::before {
+    right: 25rem;
+  }
 }
 
 .account__summary {
@@ -488,6 +518,70 @@ html {
   opacity: .5;
 }
 
+.container {
+  background-color: #E4E4E4;
+}
+
+.container .dark-mode {
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #000000;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.container .dark-mode:before {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  border-radius: 100%;
+  content: "";
+  padding: 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.4s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.4s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.container .dark-mode.active {
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-left: 2rem;
+}
+
+.container .dark-mode.active:before {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  border-radius: 50%;
+  content: "";
+  padding: 1rem;
+  background-color: #020202;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
+}
+
+.container.active {
+  background: #b5b4b48e;
+  color: #000000;
+}
+
+.container.active .main .navigation ul li span {
+  color: #000;
+}
+
+.header__logo.active {
+  display: none;
+}
+
+.header__logo-2.active {
+  display: block;
+}
+
 body {
   background: url(/img/bg.jpg);
 }
@@ -500,6 +594,8 @@ body {
           box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   margin-top: 4rem;
+  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .header {
@@ -528,6 +624,11 @@ body {
 
 .header__logo {
   margin-right: auto;
+}
+
+.header__logo-2 {
+  margin-right: auto;
+  display: none;
 }
 
 .header__notification {
@@ -605,6 +706,15 @@ body {
           justify-content: center;
 }
 
+@media only screen and (max-width: 900px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .main__side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -623,6 +733,21 @@ body {
   padding-top: 5rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .main__side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .main__content {
   height: 100%;
   -webkit-box-flex: 1;
@@ -638,6 +763,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5rem;
+  text-align: left;
 }
 
 .navigation__text {
@@ -646,6 +772,12 @@ body {
   color: rgba(255, 255, 255, 0.282);
   margin-left: 3rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation__text {
+    margin-left: 0;
+  }
 }
 
 .navigation__list {
@@ -660,6 +792,27 @@ body {
   margin-left: 2rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .navigation__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 0;
+    margin-bottom: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navigation__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .navigation__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,6 +820,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .navigation__arrow {
@@ -674,13 +837,16 @@ body {
           transform: rotate(-90deg);
 }
 
+@media only screen and (max-width: 900px) {
+  .navigation__arrow {
+    display: none;
+  }
+}
+
 .navigation__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -688,6 +854,12 @@ body {
   margin-left: 1rem;
   -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation__item {
+    margin-left: 0;
+  }
 }
 
 .navigation__text:hover {
@@ -706,6 +878,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation__link {
+    width: 100%;
+  }
 }
 
 .navigation__link:active {
@@ -733,6 +911,12 @@ body {
   color: #fff;
   font-size: 1rem;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer {
+    display: none;
+  }
 }
 
 .footer a {
