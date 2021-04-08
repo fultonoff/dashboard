@@ -37,6 +37,12 @@ body{
     justify-content: center;
     align-self: stretch;
     border-bottom: 1px solid hsla(228, 22%, 5%, 0.35);
+
+    @media only screen and(max-width: 700px) {
+
+        padding: 5rem 0;
+       
+   }
     
 
     &__btn{
@@ -46,6 +52,11 @@ body{
 
     &__logo{
         margin-right: auto;
+        @media only screen and(max-width: 700px) {
+
+            widht: 10px;
+           
+       }
         
         
         

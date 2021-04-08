@@ -723,6 +723,12 @@ body {
   border-bottom: 1px solid rgba(10, 11, 16, 0.35);
 }
 
+@media only screen and (max-width: 700px) {
+  .header {
+    padding: 5rem 0;
+  }
+}
+
 .header__btn {
   margin-left: 1rem;
   background: rgba(255, 255, 255, 0.2);
@@ -730,6 +736,12 @@ body {
 
 .header__logo {
   margin-right: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .header__logo {
+    widht: 10px;
+  }
 }
 
 .header__logo-2 {
