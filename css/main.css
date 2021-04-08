@@ -67,6 +67,12 @@ html {
   font-family: 'Rubik', sans-serif;
 }
 
+@media only screen and (max-width: 700px) {
+  .user {
+    text-align: center;
+  }
+}
+
 .user h1 {
   font-family: inherit;
   color: #fff;
